@@ -9,3 +9,9 @@ services:
   service3:
     image: service3:latest
     build: ./service3
+
+  prometheus:
+  image: 62070168-prometheus:latest
+  build: ./prometheus
+  ports:
+  - "9090:9090"
