@@ -11,7 +11,9 @@ services:
     build: ./service3
 
   prometheus:
-  image: 62070168-prometheus:latest
-  build: ./prometheus
-  ports:
-  - "9090:9090"
+    image: 62070168-prometheus:latest
+    build: ./prometheus
+
+  grafana:
+    image: 62070168-grafana:latest
+    build: ./grafana

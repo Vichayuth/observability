@@ -14,7 +14,10 @@ services:
       - "3002:3002"
 
   prometheus:
-  image: 62070168-prometheus:latest
-  build: ./prometheus
-  ports:
-  - "9090:9090"
+    image: 62070168-prometheus:latest
+    ports:
+      - "9090:9090"
+  grafana:
+    image: 62070168-grafana:latest
+    ports:
+      - "9999:9999"
